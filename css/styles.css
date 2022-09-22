@@ -1,24 +1,14 @@
 /*
-
-основной серый текст - #757575
-второстепенный черный текст- #212121
-
-при наведении на ссылку (акцент) - голубой - #2196F3
-
-белый текст в hero и футере  - #FFFFFF
-
-задний фон на нечетной сеции - #F5F4FA
-
-задний фон hero и футера темно-синий - #2F303A
-
-серый border - #EEEEEE
-
-серая линия под хедером - #ECECEC
-
-черный - #000000
-
-серый дял текск футера - #FFFFFF99
-
+основной серый текст - #757575;
+второстепенный черный текст- #212121;
+при наведении на ссылку (акцент) - голубой - #2196F3;
+белый текст в hero и футере  - #FFFFFF;
+задний фон на нечетной сеции - #F5F4FA;
+задний фон hero и футера темно-синий - #2F303A;
+серый border - #EEEEEE;
+серая линия под хедером - #ECECEC;
+черный - #000000;
+серый дял текск футера - #FFFFFF99;
 */
 
 :root {
@@ -36,14 +26,12 @@
 }
 
 body {
-  background-color: var(--primary-white-color);
-  color: var(--primary-text-color);
-
   font-family: 'Roboto', sans-serif;
-  /* font-style: normal;
-  font-weight: 400; */
   font-size: 14px;
   letter-spacing: 0.03em;
+
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
 }
 
 .link {
@@ -67,6 +55,18 @@ body {
   margin: -1px;
 }
 
+/* padding 15 в сумме 30
+
+
+*/
+
+.container {
+  width: 1230px;
+  padding: 0 15px;
+
+  margin: 0 auto;
+}
+
 /* ------------NAVIGATION------------ */
 .logo {
   color: var(--accent-blue-color);
@@ -85,6 +85,11 @@ body {
 
 .logo .footer {
   color: var(--primary-white-color);
+}
+
+.site-nav {
+  margin: 0;
+  padding: 0;
 }
 
 .site-nav .link {
@@ -122,10 +127,14 @@ body {
 /* ------------HERO------------ */
 
 .hero {
+  text-align: center;
+
   background-color: var(--dark-background);
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--primary-white-color);
 
   font-weight: 900;
@@ -139,9 +148,6 @@ body {
 /* ------------BUTTON------------ */
 
 .button-list .button {
-  background-color: var(--gray-background);
-  color: var(--secondary-black-color);
-
   font-family: inherit;
   cursor: pointer;
   font-weight: 500;
@@ -149,6 +155,9 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+
+  background-color: var(--gray-background);
+  color: var(--secondary-black-color);
 }
 
 .button-list .button:hover,
@@ -158,8 +167,9 @@ body {
 }
 
 .main-button {
-  color: var(--primary-white-color);
-  background-color: var(--accent-blue-color);
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
 
   font-family: inherit;
   letter-spacing: 0.06em;
@@ -167,6 +177,9 @@ body {
   font-size: 16px;
   line-height: 1.88;
   cursor: pointer;
+
+  color: var(--primary-white-color);
+  background-color: var(--accent-blue-color);
 }
 
 .main-button:hover,
@@ -177,26 +190,37 @@ body {
 /* ------------ОСОБЛИВОСТІ------------ */
 
 .section-title {
-  color: var(--secondary-black-color);
+  margin-top: 0;
+  margin-bottom: 50px;
 
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+
+  color: var(--secondary-black-color);
 }
 
 .features-list .title {
-  color: var(--secondary-black-color);
+  margin-top: 0;
+  margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  color: var(--secondary-black-color);
 }
 
 /* ------------ЗАЙМАЄМОСЬ------------ */
+
+.work-list .item {
+  margin-top: 0;
+  margin-bottom: 94px;
+}
 
 /* ------------КОМАНДА------------ */
 
