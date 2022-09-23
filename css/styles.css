@@ -40,6 +40,10 @@ body {
 
 .list {
   list-style: none;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 .visually-hidden {
@@ -68,7 +72,9 @@ body {
 }
 
 /* ------------NAVIGATION------------ */
-.logo {
+.logo-header,
+.logo-footer {
+  display: inline-block;
   color: var(--accent-blue-color);
 
   font-family: 'Raleway', sans-serif;
@@ -79,11 +85,13 @@ body {
   letter-spacing: 0.03em;
 }
 
-.logo .header {
+.logo-header .header {
+  padding: 0;
   color: var(--full-black-color);
 }
 
-.logo .footer {
+.logo-footer .footer {
+  padding: 0;
   color: var(--primary-white-color);
 }
 
@@ -124,6 +132,10 @@ body {
   color: var(--accent-blue-color);
 }
 
+header {
+  border-bottom: 1px solid var(--gray-header-border);
+}
+
 /* ------------HERO------------ */
 
 .hero {
@@ -147,7 +159,18 @@ body {
 
 /* ------------BUTTON------------ */
 
+.button-list {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
 .button-list .button {
+  display: inline-block;
+  padding: 6px 22px;
+
+  border-color: transparent;
+  border-radius: 4px;
+
   font-family: inherit;
   cursor: pointer;
   font-weight: 500;
@@ -169,6 +192,8 @@ body {
 .main-button {
   display: inline-block;
   padding: 10px 32px;
+
+  border-color: transparent;
   border-radius: 4px;
 
   font-family: inherit;
@@ -188,6 +213,11 @@ body {
 }
 
 /* ------------ОСОБЛИВОСТІ------------ */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .section-title {
   margin-top: 0;
@@ -215,11 +245,23 @@ body {
   color: var(--secondary-black-color);
 }
 
+.features-list .describe {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* ------------ЗАЙМАЄМОСЬ------------ */
+
+.work-list {
+}
 
 .work-list .item {
   margin-top: 0;
-  margin-bottom: 94px;
+  margin-bottom: 0;
+}
+
+.work-list .item-image {
+  display: block;
 }
 
 /* ------------КОМАНДА------------ */
@@ -228,8 +270,16 @@ body {
   background-color: var(--gray-background);
 }
 
+.card .image {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
 .team-list .title,
 .team-list .job {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -238,6 +288,7 @@ body {
 }
 
 .team-list .title {
+  margin-bottom: 10px;
   font-weight: 500;
   color: var(--secondary-black-color);
 }
@@ -249,7 +300,14 @@ body {
 /* ------------ФУТЕР------------ */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--dark-background);
+}
+
+.logo-footer {
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .contact-address {
@@ -270,9 +328,29 @@ body {
   color: var(--accent-blue-color);
 }
 
+.address-list .item:not(:last-child) {
+  margin-top: 0;
+  margin-bottom: 9px;
+}
 /* ------------***PORTFOLIO***------------ */
 
+.examples-list .item {
+  padding-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 1px solid var(--card-border-background);
+}
+
+.examples-list .image {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
 .examples-list .title {
+  margin-top: 0;
+  margin-bottom: 4px;
+
   color: var(--secondary-black-color);
 
   font-weight: 700;
@@ -282,6 +360,8 @@ body {
 }
 
 .examples-list .type {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
