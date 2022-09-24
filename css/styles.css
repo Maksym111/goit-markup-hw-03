@@ -34,6 +34,31 @@ body {
   color: var(--primary-text-color);
 }
 
+/* ---------УТИЛИТЫ--------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
 .link {
   text-decoration: none;
 }
@@ -41,9 +66,8 @@ body {
 .list {
   list-style: none;
 
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
+  margin: 0;
+  padding-left: 0;
 }
 
 .visually-hidden {
@@ -114,8 +138,6 @@ header {
 .site-nav {
   display: flex;
 
-  margin: 0;
-  padding: 0;
   margin-left: 93px;
 }
 
@@ -176,12 +198,13 @@ header {
 
 .hero {
   text-align: center;
+  padding: 200px 0;
 
   background-color: var(--dark-background);
 }
 
 .hero-title {
-  max-width: 700px;
+  width: 696px;
   margin: 0 auto 30px;
 
   color: var(--primary-white-color);
@@ -211,14 +234,9 @@ header {
 }
 
 .button-list .button {
-  display: inline-block;
   padding: 6px 22px;
 
-  border-color: transparent;
-  border-radius: 4px;
-
   font-family: inherit;
-  cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -239,15 +257,11 @@ header {
   display: inline-block;
   padding: 10px 32px;
 
-  border-color: transparent;
-  border-radius: 4px;
-
   font-family: inherit;
   letter-spacing: 0.06em;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  cursor: pointer;
 
   color: var(--primary-white-color);
   background-color: var(--accent-blue-color);
@@ -270,7 +284,6 @@ header {
 }
 
 .section-title {
-  margin-top: 0;
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -294,7 +307,6 @@ header {
 }
 
 .features-list .title {
-  margin-top: 0;
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -307,9 +319,6 @@ header {
 }
 
 .features-list .describe {
-  margin-top: 0;
-  margin-bottom: 0;
-
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -319,7 +328,6 @@ header {
 
 .work-list {
   display: flex;
-  justify-content: space-between;
   gap: 30px;
 }
 
@@ -347,14 +355,20 @@ header {
 
 .team-list .card {
   width: calc((100% - 90px) / 4);
+
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list .describe {
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
 .team-list .title,
 .team-list .job {
-  margin-top: 0;
-  margin-bottom: 0;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -366,15 +380,6 @@ header {
   margin-bottom: 10px;
   font-weight: 500;
   color: var(--secondary-black-color);
-}
-
-.team-list .card {
-  background-color: var(--primary-white-color);
-}
-
-.card .image {
-  margin-top: 0;
-  margin-bottom: 30px;
 }
 
 /* ------------ФУТЕР------------ */
@@ -437,16 +442,14 @@ header {
   color: var(--primary-text-color);
 }
 
-.examples-list .image {
-  display: block;
-}
-
 .examples-list .border {
+  padding: 20px 24px;
+
   border: 1px solid var(--card-border-background);
+  border-top: none;
 }
 
 .examples-list .title {
-  margin-top: 0;
   margin-bottom: 4px;
 
   color: var(--secondary-black-color);
@@ -458,10 +461,6 @@ header {
 }
 
 .examples-list .type {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 20px;
-
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
